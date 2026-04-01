@@ -22,13 +22,13 @@ log = logging.getLogger("alert_engine")
 # Thresholds
 # ---------------------------------------------------------------------------
 THRESHOLDS = {
-    "cpu_pct":  {"warn": 75.0, "crit": 90.0},
-    "mem_pct":  {"warn": 80.0, "crit": 92.0},
-    "disk_pct": {"warn": 85.0, "crit": 95.0},
+    "cpu_pct":  {"warn": 15.0, "crit": 25.0},
+    "mem_pct":  {"warn": 85.0, "crit": 92.0},
+    "disk_pct": {"warn": 43.0, "crit": 48.0},
 }
 
 # Number of consecutive breaching samples required before state promotion
-HYSTERESIS_COUNT = 3
+HYSTERESIS_COUNT = 2
 
 # Internal state names
 STATE_NORMAL     = "NORMAL"
